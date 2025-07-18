@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         "HelloFW": {
             description: "HelloFW is a social platform that connects OFWs from different countries to share cultures, ideas, experiences and conversations in real time. ",
-            images: ["images/projects/portfolio.jpg"],
+            images: ["images/projects/hellofw.jpg"],
             descriptions: ["HelloFW is a social platform that connects OFWs from different countries to share cultures, ideas, experiences and conversations in real time. "]
         }
     };
