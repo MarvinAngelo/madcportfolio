@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvin Angelo A. Dela Cruz - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MADC</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="home-content">
+                <div class="home-img">
+                    <img src="images/MADC_Picture.jpg" alt="Marvin Angelo A. Dela Cruz">
+                </div>
+                <div class="home-text">
+                    <h1>Marvin Angelo A. Dela Cruz</h1>
+                    <p>Software Developer | Full-Stack Developer</p>
+                    <p>Motivated and versatile software developer with experience in front-end, back-end, and database development. Skilled in PHP, Flutter, Java, Supabase and Firebase, with additional knowledge in microcontrollers, circuit design, and machine learning. Eager to build impactful apps and collaborate in dynamic teams.</p>
+                    <div class="home-buttons">
+                        <a href="CV-Dela_Cruz_Marvin_Angelo.pdf" class="btn" download>Download CV</a>
+                        <button class="btn" id="contact-btn">Contact</button>
+                    </div>
+                    <div class="contact-info" id="contact-details" style="display: none;">
+                        <p>marvinangelodelacruz3108@gmail.com</p>
+                        <p>(+63) 995 903 3994</p>
+                        <p>Manila City, Philippines</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-title="UDM Clinic Cares System" data-image="images/projects/UDM_Clinic_Cares/1LandingPage.png" data-description="A web-based platform to streamline clinic operations and patient records for the Universidad de Manila. Features include appointment scheduling, patient information management, and medical records tracking.">
+                    <img src="images/projects/UDM_Clinic_Cares/1LandingPage.png" alt="UDM Clinic Cares System">
+                    <div class="card-overlay">
+                        <h3>UDM Clinic Cares System</h3>
+                    </div>
+                </div>
+                <div class="project-card" data-title="UDM IntelliGrade System" data-image="images/projects/UDM_IntelliGrade/1FrontPage.png">
+                    <img src="images/projects/UDM_IntelliGrade/1FrontPage.png" alt="UDM IntelliGrade System">
+                    <div class="card-overlay">
+                        <h3>UDM IntelliGrade System</h3>
+                    </div>
+                </div>
+                <div class="project-card" data-title="UDM Study Plan System" data-image="images/projects/udm-study-plan.jpg" data-description="A dynamic study plan generator for students. It helps students to plan their academic journey, select courses, and ensure they meet all curriculum requirements for graduation.">
+                    <img src="images/projects/udm-study-plan.jpg" alt="UDM Study Plan System">
+                    <div class="card-overlay">
+                        <h3>UDM Study Plan System</h3>
+                    </div>
+                </div>
+                <div class="project-card" data-title="Personal Portfolio Website" data-image="images/projects/portfolio.jpg" data-description="The very website you are browsing now. Built from scratch using HTML, CSS, and JavaScript to showcase my skills, projects, and experience in a clean, interactive, and responsive design.">
+                    <img src="images/projects/portfolio.jpg" alt="Personal Portfolio Website">
+                    <div class="card-overlay">
+                        <h3>Personal Portfolio Website</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <div class="experience-item">
+                <h3>Software Development Intern</h3>
+                <p><strong>College of Engineering and Technology Department – Universidad de Manila</strong> | Feb 2025 to May 2025</p>
+                <ul>
+                    <li>Developed UDM Clinic Cares System, a web-based platform to streamline clinic operations and patient records.</li>
+                    <li>Built UDM IntelliGrade System, an automated grading system for faculty use, improving grading efficiency and accuracy.</li>
+                    <li>Created UDM Study Plan System, a dynamic study plan generator for students.</li>
+                    <li>Gained hands-on experience with database design, UI/UX, server-side scripting, and system deployment.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>PHP</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C+</li>
+                        <li>Dart (Flutter)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases & BaaS</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>SQLite</li>
+                        <li>Firebase</li>
+                        <li>Supabase</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <ul>
+                        <li>XAMPP</li>
+                        <li>Mobile Development using Flutter</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Hardware & Systems</h3>
+                    <ul>
+                        <li>Microcontroller Programming</li>
+                        <li>Circuit Designing</li>
+                        <li>Computer Assembly & Troubleshooting</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <ul>
+                        <li>Basic ML concepts</li>
+                        <li>Model training using Convolutional Neural Networks (CNN)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Science in Computer Engineering</h3>
+                <p><strong>Universidad de Manila – Manila, Philippines</strong> | 2021 - 2025</p>
+            </div>
+            <div class="education-item">
+                <h3>Science, Technology, Engineering, Mathematics (STEM) Track</h3>
+                <p><strong>Metropolitan Medical Center - MMC CAST - Manila, Philippines</strong> | 2019 - 2021</p>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Certificate of Recognition - Universidad de Manila – College of Engineering and Technology for the development of UDM Clinic Cares System</li>
+                <li>Certificate of Recognition - Universidad de Manila – College of Engineering and Technology for the development of UDM IntelliGrade System</li>
+                <li>Certificate of Completion – On-the-Job Training (OJT) - Universidad de Manila – College of Engineering and Technology (500 hours)</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+<div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div class="modal-image-container">
+                <img src="" alt="Project Image">
+            </div>
+            <div class="modal-controls">
+                <button class="prev-button">Previous</button>
+                <span class="image-counter"></span>
+                <button class="next-button">Next</button>
+            </div>
+            <div class="modal-description">
+                <p id="modal-text"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
