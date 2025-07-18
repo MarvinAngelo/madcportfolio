@@ -123,10 +123,10 @@ document.addEventListener('DOMContentLoaded', function() {
             images: ["images/projects/udm-study-plan.jpg"],
             descriptions: ["A dynamic study plan generator for students. It helps students to plan their academic journey, select courses, and ensure they meet all curriculum requirements for graduation."]
         },
-        "Personal Portfolio Website": {
-            description: "The very website you are browsing now. Built from scratch using HTML, CSS, and JavaScript to showcase my skills, projects, and experience in a clean, interactive, and responsive design.",
+        "HelloFW": {
+            description: "HelloFW is a social platform that connects OFWs from different countries to share cultures, ideas, experiences and conversations in real time. ",
             images: ["images/projects/portfolio.jpg"],
-            descriptions: ["The very website you are browsing now. Built from scratch using HTML, CSS, and JavaScript to showcase my skills, projects, and experience in a clean, interactive, and responsive design."]
+            descriptions: ["HelloFW is a social platform that connects OFWs from different countries to share cultures, ideas, experiences and conversations in real time. "]
         }
     };
 
