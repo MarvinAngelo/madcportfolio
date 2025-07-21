@@ -597,3 +597,13 @@ h2 {
     }
 }
 
+
+.email-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}

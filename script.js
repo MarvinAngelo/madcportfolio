@@ -150,11 +150,41 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
         "HelloFW": {
-            description: "HelloFW is a social platform that connects OFWs from different countries to share cultures, ideas, experiences and conversations in real time. ",
-            technologies: ['Flutter', 'Dart', 'Firebase'],
-            sourceLink: 'https://github.com/MADC-18/HelloFW',
-            images: ["images/projects/hellofw.jpg"],
-            descriptions: ["HelloFW is a social platform that connects OFWs from different countries to share cultures, ideas, experiences and conversations in real time. "]
+            description: "HelloFW is a social media type app where Overseas Filipino Workers can talk, meet and make friends. This app will help them to get a job, share their thoughts and even experiences.",
+            technologies: ['Flutter', 'Dart', 'Supabase'],
+            sourceLink: 'https://github.com/MarvinAngelo/HelloFW',
+            images: [
+                "images/projects/HelloFW/1LandingPage.jpg",
+                "images/projects/HelloFW/2LoginScreen.jpg",
+                "images/projects/HelloFW/3RegisterScreen.jpg",
+                "images/projects/HelloFW/4.1HomeScreen.jpg",
+                "images/projects/HelloFW/4.2HomeScreen.jpg",
+                "images/projects/HelloFW/5.1Messages.jpg",
+                "images/projects/HelloFW/5.2Messsages.jpg",
+                "images/projects/HelloFW/6Explore.jpg",
+                "images/projects/HelloFW/7FamilyScreen.jpg",
+                "images/projects/HelloFW/7.1FamilyAdd.jpg",
+                "images/projects/HelloFW/7.2ManageFamily.jpg",
+                "images/projects/HelloFW/7.3QRPerFamily.jpg",
+                "images/projects/HelloFW/8ProfileScreen.jpg",
+                "images/projects/HelloFW/9AboutDev.jpg"
+            ],
+            descriptions: [
+                "The landing page of the HelloFW application, introducing users to the platform's features.",
+                "The login screen where users can securely access their accounts.",
+                "The registration screen for new users to create a HelloFW account.",
+                "The main home screen, displaying a feed of posts and activities from other users.",
+                "An expanded view of the home screen, showcasing more content and interactions.",
+                "The private messaging interface, allowing users to communicate directly with each other.",
+                "A view of an ongoing conversation within the messaging feature, with images and file sending capabilities.",
+                "The explore page, where users can discover new content, profiles, and communities.",
+                "The family screen, providing a dedicated space for users to connect with their family members.",
+                "The interface for adding a new family member to a user's circle.",
+                "The family management page, where users can view and manage their connected family members.",
+                "A feature to generate a unique QR code for each family, simplifying the process of connecting with relatives.",
+                "The user's profile screen, displaying their personal information and activity.",
+                "A page providing information about the developer of the HelloFW application."
+            ]
         }
     };
 
