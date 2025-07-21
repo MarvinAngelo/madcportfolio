@@ -60,6 +60,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const projects = {
         "UDM Clinic Cares System": {
             description: "A web-based platform to streamline clinic operations and patient records for the Universidad de Manila. Features include appointment scheduling, patient information management, and medical records tracking.",
+            technologies: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
+            sourceLink: 'https://github.com/MarvinAngelo/UDM-Clinic-Cares-System',
             images: [
                 "images/projects/UDM_Clinic_Cares/1LandingPage.png",
                 "images/projects/UDM_Clinic_Cares/2LoginPage.png",
@@ -93,6 +95,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         "UDM IntelliGrade System": {
             description: "An automated grading system designed for faculty use at Universidad de Manila. It simplifies the process of grade computation, reduces manual errors, and provides analytics on student performance.",
+            technologies: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
+            sourceLink: 'https://github.com/MarvinAngelo/UDM-Intelligrade-System',
             images: [
                 "images/projects/UDM_IntelliGrade/1FrontPage.png",
                 "images/projects/UDM_IntelliGrade/2SigninPage.png",
@@ -120,11 +124,35 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         "UDM Study Plan System": {
             description: "A dynamic study plan generator for students. It helps students to plan their academic journey, select courses, and ensure they meet all curriculum requirements for graduation.",
-            images: ["images/projects/udm-study-plan.jpg"],
-            descriptions: ["A dynamic study plan generator for students. It helps students to plan their academic journey, select courses, and ensure they meet all curriculum requirements for graduation."]
+            technologies: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
+            sourceLink: 'https://github.com/MarvinAngelo/UDM-Study-Plan-System',
+            images: [
+                "images/projects/UDM_Study_Plan/1LandingPage.png",
+                "images/projects/UDM_Study_Plan/2Dashboard.png",
+                "images/projects/UDM_Study_Plan/3DepartmentList.png",
+                "images/projects/UDM_Study_Plan/4ProgramList.png",
+                "images/projects/UDM_Study_Plan/5Subjects.png",
+                "images/projects/UDM_Study_Plan/6StudentList.png",
+                "images/projects/UDM_Study_Plan/7StudentGrades.png",
+                "images/projects/UDM_Study_Plan/8SPStatus.png",
+                "images/projects/UDM_Study_Plan/9PDF.png"
+            ],
+            descriptions: [
+                "The main landing page for the UDM Study Plan System.",
+                "The student dashboard, showing an overview of their study plan.",
+                "A list of academic departments available in the system.",
+                "A list of academic programs offered by the departments.",
+                "A view of the subjects required for a specific program.",
+                "A list of students enrolled in the system.",
+                "A view of a student's grades for their completed subjects.",
+                "The status of a student's study plan, indicating progress and any issues.",
+                "A generated PDF document of the student's study plan."
+            ]
         },
         "HelloFW": {
             description: "HelloFW is a social platform that connects OFWs from different countries to share cultures, ideas, experiences and conversations in real time. ",
+            technologies: ['Flutter', 'Dart', 'Firebase'],
+            sourceLink: 'https://github.com/MADC-18/HelloFW',
             images: ["images/projects/hellofw.jpg"],
             descriptions: ["HelloFW is a social platform that connects OFWs from different countries to share cultures, ideas, experiences and conversations in real time. "]
         }
@@ -135,6 +163,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalImg = modal.querySelector('.modal-image-container img');
     const modalTitle = document.getElementById('modal-title');
     const modalText = document.getElementById('modal-text');
+    const modalFullDescription = document.getElementById('modal-full-description');
+    const modalTechnologies = document.getElementById('modal-technologies');
+    const modalSourceLink = document.getElementById('modal-source-link');
     const closeButton = modal.querySelector('.close-button');
     const prevButton = modal.querySelector('.prev-button');
     const nextButton = modal.querySelector('.next-button');
@@ -165,6 +196,24 @@ document.addEventListener('DOMContentLoaded', function() {
             modalText.textContent = currentProject.descriptions[currentImageIndex];
         } else {
             modalText.textContent = currentProject.description;
+        }
+
+        modalFullDescription.textContent = currentProject.description;
+        
+        modalTechnologies.innerHTML = '';
+        if (currentProject.technologies) {
+            currentProject.technologies.forEach(tech => {
+                const li = document.createElement('li');
+                li.textContent = tech;
+                modalTechnologies.appendChild(li);
+            });
+        }
+
+        if (currentProject.sourceLink) {
+            modalSourceLink.href = currentProject.sourceLink;
+            modalSourceLink.style.display = 'inline';
+        } else {
+            modalSourceLink.style.display = 'none';
         }
     }
 

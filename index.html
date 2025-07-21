@@ -37,7 +37,7 @@
                     <p>Software Developer | Full-Stack Developer</p>
                     <p>Motivated and versatile software developer with experience in front-end, back-end, and database development. Skilled in PHP, Flutter, Java, Supabase and Firebase, with additional knowledge in microcontrollers, circuit design, and machine learning. Eager to build impactful apps and collaborate in dynamic teams.</p>
                     <div class="home-buttons">
-                        <a href="files/CV-Dela_Cruz_Marvin_Angelo.pdf" class="btn" download>Download CV</a>
+                        <a href="files/CV-Dela_Cruz_Marvin_Angelo.pdf" class="btn" target="_blank">Download CV</a>
                         <button class="btn" id="contact-btn">Contact</button>
                     </div>
                     <div class="contact-info" id="contact-details" style="display: none;">
@@ -65,8 +65,8 @@
                         <h3>UDM IntelliGrade System</h3>
                     </div>
                 </div>
-                <div class="project-card" data-title="UDM Study Plan System" data-image="images/projects/udm-study-plan.jpg" data-description="A dynamic study plan generator for students. It helps students to plan their academic journey, select courses, and ensure they meet all curriculum requirements for graduation.">
-                    <img src="images/projects/udm-study-plan.jpg" alt="UDM Study Plan System">
+                <div class="project-card" data-title="UDM Study Plan System" data-image="images/projects/UDM_Study_Plan/1LandingPage.png" data-description="A dynamic study plan generator for students. It helps students to plan their academic journey, select courses, and ensure they meet all curriculum requirements for graduation.">
+                    <img src="images/projects/UDM_Study_Plan/1LandingPage.png" alt="UDM Study Plan System">
                     <div class="card-overlay">
                         <h3>UDM Study Plan System</h3>
                     </div>
@@ -169,16 +169,28 @@
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <h2 id="modal-title"></h2>
-            <div class="modal-image-container">
-                <img src="" alt="Project Image">
-            </div>
-            <div class="modal-controls">
-                <button class="prev-button">Previous</button>
-                <span class="image-counter"></span>
-                <button class="next-button">Next</button>
-            </div>
-            <div class="modal-description">
-                <p id="modal-text"></p>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <div class="modal-image-container">
+                        <img src="" alt="Project Image">
+                    </div>
+                    <div class="modal-controls">
+                        <button class="prev-button">Previous</button>
+                        <span class="image-counter"></span>
+                        <button class="next-button">Next</button>
+                    </div>
+                    <div class="modal-description">
+                        <p id="modal-text"></p>
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <h3>Project Description</h3>
+                    <p id="modal-full-description"></p>
+                    <h3>Technologies Used</h3>
+                    <ul id="modal-technologies"></ul>
+                    <h3>Source Code</h3>
+                    <a href="#" id="modal-source-link" target="_blank">View on GitHub</a>
+                </div>
             </div>
         </div>
     </div>
