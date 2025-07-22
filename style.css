@@ -563,6 +563,13 @@ h2 {
     }
 }
 
+@media (max-width: 430px) {
+    #home h1 {
+        font-size: 1.5rem;
+        white-space: normal;
+    }
+}
+
 .hamburger {
     display: none;
     cursor: pointer;
@@ -590,6 +597,9 @@ h2 {
 
 
 @media screen and (max-width: 768px) {
+    .modal-body {
+        flex-direction: column;
+    }
     .nav-links {
         position: absolute;
         right: 0;
