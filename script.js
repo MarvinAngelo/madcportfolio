@@ -270,6 +270,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    const hamburger = document.querySelector('.hamburger');
+    const navLinksContainer = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinksContainer.classList.toggle('nav-active');
+        hamburger.classList.toggle('toggle');
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navLinksContainer.classList.contains('nav-active')) {
+                navLinksContainer.classList.remove('nav-active');
+                hamburger.classList.remove('toggle');
+            }
+        });
+    });
+
     function closeModal() {
         modal.style.display = 'none';
     }
