@@ -280,6 +280,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
+            const targetId = link.getAttribute('href').substring(1);
+            showSection(targetId);
+            updateActiveLink(targetId);
+
             if (navLinksContainer.classList.contains('nav-active')) {
                 navLinksContainer.classList.remove('nav-active');
                 hamburger.classList.remove('toggle');

@@ -95,7 +95,7 @@ html {
 }
 
 section {
-    padding: 80px 5% 4rem 5%; /* Adjusted top padding for fixed header */
+    padding: 100px 5% 4rem 5%; /* Adjusted top padding for fixed header */
     position: absolute;
     top: 0;
     left: 0;
@@ -509,29 +509,51 @@ h2 {
 
 @media (max-width: 768px) {
     body {
-        overflow: auto;
+        overflow: hidden;
     }
     main {
-        height: auto;
+        height: 100%;
     }
     section {
-        height: auto;
-        padding: 60px 5% 3rem 5%;
+        padding: 80px 5% 2rem 5%;
     }
     nav ul {
         display: none; /* Hide for hamburger menu */
     }
     #home h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     #home p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    .experience-item,
+    .education-item {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
     }
     .skills-container {
         grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .skill-category {
+        padding: 1.5rem;
+    }
+    #certifications li {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .home-buttons {
+        gap: 0.5rem;
+    }
+    .btn {
+        padding: 0.6rem 1.2rem;
     }
 }
 
